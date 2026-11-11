@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#faf7ff">
+<meta name="description" content="Organizá tus comidas, anotá tus hábitos y encontrá un momento para moverte.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<title>Mi Bienestar · 30 días</title>
+<link rel="stylesheet" href="styles.css">
+<script defer src="foods.js"></script>
+<script defer src="content.js"></script>
+<script defer src="engine.js"></script>
+<script defer src="img/recetas/fotos.js"></script>
+<script defer src="medidas.js"></script>
+<script defer src="guia-taichi.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<aside class="sidebar">
+<a class="brand" href="#inicio"><span class="logo" aria-hidden="true">❋</span><span>Mi Bienestar<small>PROGRAMA DE 30 DÍAS</small></span></a>
+<nav id="nav" aria-label="Navegación principal"></nav>
+<div class="sidebar-bottom"><span>◉</span> Guardado en este navegador</div>
+</aside>
+<div class="workspace">
+<header class="top"><span class="kicker">MI ESPACIO PERSONAL</span><span id="top-date"></span></header>
+<div id="storage-warning" role="alert"></div>
+<main id="main" tabindex="-1">
+  <section class="card pad" aria-labelledby="startup-title">
+    <h1 id="startup-title">Mi Bienestar no pudo iniciarse</h1>
+    <p>Volvé a abrir <strong>index.html</strong> desde el Explorador de Windows. Revisá que <strong>styles.css</strong>, <strong>foods.js</strong>, <strong>content.js</strong>, <strong>engine.js</strong>, <strong>medidas.js</strong>, <strong>guia-taichi.js</strong>, <strong>app.js</strong> y <strong>bienestar.svg</strong> estén en la misma carpeta.</p>
+    <p>No hace falta borrar los datos del navegador para volver a intentar.</p>
+    <noscript><p>JavaScript está desactivado. Activá JavaScript para usar Mi Bienestar.</p></noscript>
+  </section>
+</main>
+<footer>Una guía para organizar tu día. Las indicaciones de tu equipo de salud tienen prioridad. <a href="#fuentes">Fuentes y privacidad</a></footer>
+</div>
+<dialog id="modal" aria-labelledby="modal-title"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
